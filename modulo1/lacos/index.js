@@ -40,11 +40,22 @@ while(quantidadeAtual < quantidadeTotal){
 //A-
 
 let numeroBichinhos = Number(prompt("Quantos bichinhos você tem?"))
+let nomeBichinhos = [String(prompt("Qual o nome dele?"))]
 
-if (numeroBichinhos === 0){
+if ( numeroBichinhos === 0){ 
+  console.log("Que pena! Você pode adotar um pet!")
+  }else{  
+  for (i = 0; i <= numeroBichinhos; i++){
+      console.log("Qual o nome deles?")
+}
+
+
+
+
+/*if (numeroBichinhos === 0){
     console.log("Que pena! Você pode adotar um pet!") 
 } else {
 for( let bichos = 0; bichos < numeroBichinhos; bichos++) {
     let nomeBichinhos = [String(prompt("Qual o nome dele?"))]
     console.log(nomeBichinhos[""])}
-} if (nomeBichinhos) {}
+} if (nomeBichinhos) {}*/
