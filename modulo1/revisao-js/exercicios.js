@@ -31,13 +31,22 @@ console.log(retornaNumerosPares([1, 2, 3, 4, 5, 6]))
   
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  parArray = []
+  for (let numero of array) {
+    if(numero % 2 === 0)
+    {
+      parArray.push(numero * numero)
+    }
+  }
+  return parArray
 }
+console.log(retornaNumerosParesElevadosADois([1, 2, 3, 4, 5, 6]))
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+  maiorArray = array.filter((numero) => numero )
 }
+console.log(retornaMaiorNumero([1, 5, 3, 7, 5, 2]))
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
