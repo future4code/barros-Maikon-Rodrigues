@@ -44,15 +44,26 @@ console.log(retornaNumerosParesElevadosADois([1, 2, 3, 4, 5, 6]))
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  maiorArray = array.filter((numero) => numero )
+  maiorArray = []
+  for (let numero of array) {
+    if(numero > maiorArray)
+    {
+      maiorArray = numero
+    }
+  }
+  return maiorArray
 }
 console.log(retornaMaiorNumero([1, 5, 3, 7, 5, 2]))
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
+  let objeto = [
+    {maiorNumero: "",
+    maiorDivisivelPorMenor: "",
+    diferenca: ""}]
 
 }
-
+  
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
    
@@ -60,8 +71,19 @@ function retornaNPrimeirosPares(n) {
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+  if(ladoA === ladoB && ladoB === ladoC && ladoC === ladoA){
+    console.log(`${ladoA}, ${ladoB}, ${ladoC}  Equilátero`)
+  } 
+  else if (ladoA !== ladoB && ladoB !== ladoC && ladoC !== ladoA){
+    console.log(`${ladoA}, ${ladoB}, ${ladoC}  Escaleno`)
+  }
+  else {
+    console.log(`${ladoA}, ${ladoB}, ${ladoC}  Isósceles`)
+  }
 }
+classificaTriangulo(1, 2, 4)
+classificaTriangulo(1, 2, 1)
+classificaTriangulo(5, 5, 5)
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
